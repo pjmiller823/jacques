@@ -3,4 +3,5 @@ class Note < ApplicationRecord
   validates :body, presence: true
 
   has_many :tags
+  has_many :taggings
 end
