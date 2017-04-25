@@ -22,7 +22,7 @@ module Api
       if @note.save
         render :show, status: :created, location: [:api, @note]
       else
-        render json: @note.errors, status: 400
+        render :error, status: 400
       end
     end
 

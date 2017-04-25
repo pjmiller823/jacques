@@ -38,7 +38,6 @@ class ExplorerTest < ActionDispatch::IntegrationTest
         tags:   "api, machine, first"
       }
     json = JSON.parse(response.body)
-    ap json
     assert_equal "My created post", json['note']['title']
     assert_equal 11, Note.count
     assert_equal 3, json['note']['tags'].length
@@ -53,6 +52,7 @@ class ExplorerTest < ActionDispatch::IntegrationTest
       }
     assert_equal 400, status
     json = JSON.parse(response.body)
+    ap json
     assert_equal "Title can't be blank", json['errors'].first['error']
   end
 
