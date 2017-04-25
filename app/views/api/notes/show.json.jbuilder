@@ -1,1 +1,3 @@
-json.partial! "api/notes/note", note: @note
+json.note do
+  json.partial! "api/notes/note", note: @note
+end
