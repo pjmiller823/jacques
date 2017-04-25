@@ -31,7 +31,7 @@ class ExplorerTest < ActionDispatch::IntegrationTest
   end
 
   def test_tag_create_is_correct
-    post '/api/notes',
+    post '/api/notes.json',
       params: {
         title:  "My created post",
         body:   "My created body",
@@ -44,7 +44,7 @@ class ExplorerTest < ActionDispatch::IntegrationTest
   end
 
   def test_improper_note
-    post '/api/notes',
+    post '/api/notes.json',
       params: {
         title:  "",
         body:   "My created body",
