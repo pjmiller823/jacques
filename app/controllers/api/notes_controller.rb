@@ -6,7 +6,6 @@ module Api
     # GET /notes.json
     def index
       @notes = Note.all
-
     end
 
     # GET /notes/1
@@ -52,6 +51,6 @@ module Api
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_params
       params.permit("title", "body", "tag")
-      end
+    end
   end
 end
