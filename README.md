@@ -1,24 +1,8 @@
-## README
+# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an assignment for The Iron Yard. The goal of the Assignment was to develop an API for a fictional note application 'Notemeister 5000'. Our API is a relational database of notes and tags, and was delivered in the format that our fake front end developer (Jacques) requested. 
 
-Things you may want to cover:
+### TECHNICAL INFORMATION:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Rails version 5.0.2
+- Ruby version 2.4.0
